@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme{--color-deep:#0B4D2E;--color-leaf:#2FA84F;--color-mint:#EAF5EC;--color-ink:#1B2420;--color-paper:#FBFDFB;--font-display:'Fraunces',Georgia,serif;--font-sans:'Figtree',system-ui,sans-serif}
+html{scroll-behavior:smooth}body{font-family:var(--font-sans);color:var(--color-ink);background:var(--color-paper);overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:focus-visible{outline:3px solid var(--color-leaf);outline-offset:3px}
+@layer components{
+.h{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.08}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:0 1.4rem;border-radius:.75rem;font-weight:600;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.p{background:var(--color-deep);color:#fff}.p:hover{background:#09391f}
+.o{border:2px solid var(--color-deep);color:var(--color-deep)}.o:hover{background:var(--color-mint)}
+.in{width:100%;min-height:48px;border:1.5px solid #c9d6cc;border-radius:.6rem;padding:.6rem .85rem;background:#fff}
+}
