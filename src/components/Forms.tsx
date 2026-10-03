@@ -31,7 +31,7 @@ export function AppointmentForm() {
 export function ContactForm() {
   const [err, setErr] = useState<Record<string, string>>({})
   const submit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); const d = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>; const x: Record<string, string> = {}
+    e.preventDefault(); const d: Record<string, string> = {}; new FormData(e.currentTarget).forEach((v, k) => { d[k] = String(v) }); const x: Record<string, string> = {}
     if (!d.name?.trim()) x.name = 'Enter your full name.'
     if (!/^\S+@\S+\.\S+$/.test(d.email ?? '')) x.email = 'Enter a valid email address.'
     if (!d.message?.trim()) x.message = 'Enter a message.'
