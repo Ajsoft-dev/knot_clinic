@@ -6,7 +6,7 @@ const Wrap = ({ id, children, className = '' }: { id?: string; children: ReactNo
 const Call = ({ light = false }: { light?: boolean }) => <>{clinic.phones.map(p => <a key={p.tel} href={`tel:${p.tel}`} className={`btn ${light ? 'bg-white text-deep' : 'p'}`}><Phone size={18} />{p.display}</a>)}</>
 
 export function Hero() { return (
-  <section id="top" className="relative overflow-hidden bg-mint"><div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-leaf/15 blur-3xl" /><div aria-hidden className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-deep/10 blur-3xl" /><div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 lg:grid-cols-2 lg:px-8 lg:py-20">
+  <section id="top" className="relative overflow-hidden bg-mint"><div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_0%,rgba(47,168,79,0.16),transparent_45%),radial-gradient(circle_at_0%_100%,rgba(6,78,59,0.10),transparent_45%)]" /><div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 lg:grid-cols-2 lg:px-8 lg:py-20">
     <div><p className="mb-3 font-semibold text-deep">Your health, our priority</p>
       <h1 className="h text-4xl text-deep sm:text-5xl lg:text-6xl">Compassionate Care. Professional Healthcare. Anytime.</h1>
       <p className="mt-5 max-w-xl text-lg">At KNOT CLINIC AND MATERNITY, we are committed to providing accessible healthcare services with professionalism, compassion, and attention to your wellbeing.</p>

@@ -13,7 +13,7 @@ export default function Navbar() {
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
   return (
-    <header className="sticky top-0 z-40 border-b border-mint bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 [transform:translateZ(0)] [backface-visibility:hidden] border-b border-mint bg-white">
       <nav aria-label="Main" className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-3 py-2.5 sm:px-4 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="KNOT CLINIC AND MATERNITY home">
           <img src="/images/logo.jpeg" alt="" width="44" height="44" className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11" />
