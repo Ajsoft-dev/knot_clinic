@@ -6,7 +6,7 @@ export const clinic = {
   whatsapp: { display: '08034141587', intl: '2348034141587', message: 'Hello KNOT CLINIC AND MATERNITY, I would like to make an enquiry about your healthcare services.' },
   phones: [{ display: '08034141587', tel: '+2348034141587' }, { display: '09020247790', tel: '+2349020247790' }],
   social: { facebook: 'https://www.facebook.com/share/1HKBGsi8Ru/', tiktok: 'https://www.tiktok.com/@knotclinic' },
-  devCredit: { label: 'Dev by Ajsoft', href: 'https://linktr.ee/sheriffdeen_ajijolaanabi' },
+  devCredit: { label: 'AJSOFT.', href: 'https://linktr.ee/sheriffdeen_ajijolaanabi' },
 }
 export const waLink = (m = clinic.whatsapp.message) => `https://wa.me/${clinic.whatsapp.intl}?text=${encodeURIComponent(m)}`
 export const mapsDirections = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(clinic.address)}`
