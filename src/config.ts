@@ -2,7 +2,7 @@
 export const clinic = {
   name: 'KNOT CLINIC AND MATERNITY', bn: '3350530', est: 2019,
   address: '90, Ajuwon - Akute Road, White House Bus Stop, Ajuwon, Ogun State, Nigeria.',
-  emails: ['info@knotclinic.com.ng', 'knotclinic@gmail.com'],
+  emails: ['info@knotclinic.com.ng', 'knotclinicandmaternity@gmail.com'],
   whatsapp: { display: '08034141587', intl: '2348034141587', message: 'Hello KNOT CLINIC AND MATERNITY, I would like to make an enquiry about your healthcare services.' },
   phones: [{ display: '08034141587', tel: '+2348034141587' }, { display: '09020247790', tel: '+2349020247790' }],
   social: { facebook: 'https://www.facebook.com/share/1HKBGsi8Ru/', tiktok: 'https://www.tiktok.com/@knotclinic' },
